@@ -23,18 +23,22 @@ class csvParser(object):
         self.file = open(data, 'r')
         self.targetTeam = targetTeam
         self.currPossession = None
+        Quarter,Time,Down,ToGo,Location,home,away,Detail,EPB,EPA = self.file.readline().strip().split(',')
+        self.homeTeam = home
+        self.awayTeam = away
+        self.previousState = None
 
     def readLine(self):
-        self.file.readline()
         self.file.readline()
         for row in self.file:
             if row == '\n':
                 break
-            Quarter,Time,Down,ToGo,Location,SFO,away,Detail,EPB,EPA = row.split(',')
+            Quarter,Time,Down,ToGo,Location,home,away,Detail,EPB,EPA = row.split(',')
             endzoneDistance = None
-            if 'kicks off' in Detail:
-                self.currPossession = Location.split(' ')[0]
-            if self.currPossession != self.targetTeam:
+            self.previousState = None
+            self.checkCurrPossession(Detail, Location)
+            # Handles edge cases for nontarget team possessing the ball, extra point, and plays that don't have downs
+            if self.currPossession != self.targetTeam or 'point' in Detail or not Down:
                 continue
             # If the target team who possesses the ball is on their own turf, then the endzone distance is 100 - the yard line
             if self.currPossession == Location.split(' ')[0]:
@@ -42,17 +46,16 @@ class csvParser(object):
             else:
                 endzoneDistance = int(Location.split(' ')[1])
             currentAction = self.createAction(Detail)
-            # Appending every state, action, reward to a list; however, we need to link to a future state so we need to be able to handle terminal states and transition states
-            self.data.append((self.createState(Down, ToGo, endzoneDistance, currentAction, self.isTerminalState(currentAction, Detail)), self.createReward(EPB, EPA), None))
-        self.linkStates()
+            # If there exists a previous state, then we can link the previous state to the current state
+            if self.data and self.data[-1][0]:
+                self.previousState = self.data[-1]
+            #s, a, r, s' where s = (down, toGo, endzoneDistance), a = action, r = reward, s' = next state or 'TERMINAL'
+            newState = [self.createState(Down, ToGo, endzoneDistance) , currentAction, self.createReward(EPB, EPA), 'TERMINAL' if self.isTerminalState(currentAction, Detail) else '']
+            if self.previousState and not 'TERMINAL' in self.previousState[3]:
+                self.previousState[3] = newState[0]
+            self.data.append(newState)
 
-    def linkStates(self):
-        # Linking states to future states, this might be buggy/tricky since we need to handle terminal states
-        for i in range(len(self.data)):
-            if i == len(self.data) - 1:
-                self.data[i][2][4] = None
-            else:
-                self.data[i][2][4] = self.data[i+1][0]
+
 
     def createState(self, down, toGo, endzoneDistance):
         return (down, toGo, endzoneDistance)
@@ -71,6 +74,15 @@ class csvParser(object):
     
     def createReward(self, EPB, EPA):
         return float(EPA) - float(EPB)
+    
+    def checkCurrPossession(self, detail, Location):
+        if 'kicks off' in detail:
+            self.currPossession = Location.split(' ')[0]
+        elif 'punts' in detail or 'returned' in detail: # not sure if returned applies for fumbles all the time (akwon check)
+            if self.currPossession == self.homeTeam:
+                self.currPossession = self.awayTeam
+            else:
+                self.currPossession = self.homeTeam
 
     def isTerminalState(self, action, Detail):
         if action == actions.fieldGoal or action == actions.punt or 'touchdown' in Detail or 'intercept' in Detail or ('fumble' in Detail and 'recovered' in Detail) or 'turnover on downs' in Detail:
@@ -80,3 +92,4 @@ class csvParser(object):
         
 example = csvParser('data/sfVsJaxWeek10.csv', 'SFO')
 example.readLine()
+print(example.data)
