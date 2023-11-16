@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from decimal import Decimal
 class downs(enumerate):
     firstDown = '1'
     secondDown = '2'
@@ -113,7 +114,7 @@ class csvParser(object):
             return None
     
     def createReward(self, EPB, EPA):
-        return float(EPA) - float(EPB)
+        return float(Decimal(EPA) - Decimal(EPB))
     
     def isTargetPossession(self, quarter, time):
         time = self.convertTime(time)
