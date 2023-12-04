@@ -8,7 +8,6 @@ import time
 from sklearn.neighbors import NearestNeighbors
 import ast  # Import the ast module for literal_eval
 
-
 # to denote s numerical value for terminal state 
 TERMINAL_STATE_VALUE = 10000
 # size of state space (+1 to accommodate for terminal state)
@@ -22,11 +21,10 @@ LEARNING_RATE = 0.1
 # number of passings 
 NUMBER_OF_PASSES = 10
 
-
 class QLearningMDP():
     # Action space A: {kickFG, Pass, Run, Punt}
     def __init__(self, action_space, state_space, gamma, Q, 
-                 TrackingTable, learning_rate, data):
+                 TrackingTable, learning_rate, data, curdown_togo_fp_table):
         # action space 
         self.action_space = action_space
         # state space 
@@ -41,10 +39,11 @@ class QLearningMDP():
         self.learning_rate = learning_rate  
         # data 
         self.data = data 
+        # ith row represents state i's curdown, togo, fp
+        self.curdown_togo_fp_table = curdown_togo_fp_table
 
     def update(self, s, a, r, s_prime):
         self.Q[s, a] += self.learning_rate * (r + (self.gamma * np.max(self.Q[s_prime])) - self.Q[s, a])    
-
 
     """
     QLearning algorithm starts off with traversing all explored data/transitions
@@ -54,7 +53,6 @@ class QLearningMDP():
     Q-value of unobserved state, action pairs were approximated using 
     K-Nearest Neighbors (k=5). 
     """
-
     def QLearning(self):
         # iterate through every row in the data 
         for row_data in self.data:
@@ -64,7 +62,21 @@ class QLearningMDP():
             self.update(s, a, r, s_prime)
             # update the tracking table 
             self.TrackingTable[s, a] = 1
-        
+
+        # Approximation: Nearest Neighbour
+        k = 10
+        neighbors_model = NearestNeighbors(n_neighbors=k, algorithm='ball_tree').fit(self.curdown_togo_fp_table)
+        # calculate nearest neighbors for all states 
+        d, ind = neighbors_model.kneighbors(self.curdown_togo_fp_table)  # ith row is ith state's [curdown, togo, fp]
+        # Approximate the Q-value for any s,a pair that didn't appear 
+        for s in range(self.state_space):  
+            for a in range(self.action_space):  
+                if self.TrackingTable[s][a] == 0: 
+                    for i in range(1, k):
+                        neighbor_index = ind[s][i]
+                        self.Q[s,a] += self.Q[neighbor_index, a]
+                    self.Q[s,a] = self.Q[s,a] / (len(ind[s]) - 1)
+
         # compute optimal policy
         policy = np.zeros(self.state_space)
         for s in range(self.state_space): 
@@ -79,14 +91,16 @@ def write_policy_file(filename, policy):
 
 def main():
     
-    inputfilepath = "test.csv"
+    # choose input filename 
+    inputfilepath = "/Users/elychen/CS238/cs238_Final_Project/modelFreeRL/test.csv"
+    # choose output filename 
+    outputfilename = "/Users/elychen/CS238/cs238_Final_Project/results/output_test2.csv"
 
     # load data into numpy array
-    df = pd.read_csv("/Users/elychen/CS238/cs238_Final_Project/modelFreeRL/test.csv", sep=";")
+    df = pd.read_csv(inputfilepath, sep=";")
     df["State"] = df["State"].apply(ast.literal_eval)
     df["Next_State"] = df["Next_State"].apply(ast.literal_eval)
     
-
     # Change states to numerical state 
     for i in range(len(df["State"])):
         state_list, state_list_prime = df["State"][i], df["Next_State"][i]
@@ -102,6 +116,7 @@ def main():
             curDown, toGo, fp = int(state_list_prime[0]), int(state_list_prime[1]), int(state_list_prime[2])
             df.loc[i, "Next_State"] = 100 * (toGo - 1) + 2500 * (curDown - 1) + (fp - 1)
 
+    # zero index the data 
     df["State"] -= 1
     df["Next_State"] -= 1
     df["Action"] -= 1
@@ -114,21 +129,25 @@ def main():
     # initialize Q table
     Q = np.zeros((state_space, action_space))
     # initialize table to track which (s,a) has been explored
-    print(Q)
     TrackingTable = np.zeros((state_space, action_space))
-
+    # initialize table for nearest neighbour 
+    curdown_togo_fp = []
+    for num_state in range(state_space):
+        curDown = num_state // 2500 + 1
+        toGo = (num_state % 2500) // 100 + 1
+        fp = (num_state % 2500) % 100 + 1
+        curdown_togo_fp.append([curDown, toGo, fp])
+    curdown_togo_fp_table = np.array(curdown_togo_fp)
     start = time.time()
 
     for n in range(NUMBER_OF_PASSES):
         QLearningInstance = QLearningMDP(action_space, state_space, gamma, Q, 
-                 TrackingTable, rate, data)
+                 TrackingTable, rate, data, curdown_togo_fp_table)
         policy = QLearningInstance.QLearning()
     end = time.time()
-    outputfilename = "/Users/elychen/CS238/cs238_Final_Project/results/output_test2.csv"
+    print(end - start, "seconds")
+
     write_policy_file(outputfilename, policy)
-
-
-
 
 if __name__ == '__main__':
     main()
