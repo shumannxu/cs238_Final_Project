@@ -1,4 +1,12 @@
 import numpy as np
+import sys
+import pandas as pd 
+import numpy as np 
+import scipy 
+import cvxpy as cp 
+import random 
+import time 
+from sklearn.neighbors import NearestNeighbors
 
 class QLearning:
     def __init__(self, num_states, num_actions, data, discount=.99):

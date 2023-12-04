@@ -1,5 +1,7 @@
 from datetime import datetime, timedelta
 from decimal import Decimal
+import pandas as pd
+
 class downs(enumerate):
     firstDown = '1'
     secondDown = '2'
@@ -65,7 +67,7 @@ class csvParser(object):
             if self.data and self.data[-1][0]:
                 self.previousState = self.data[-1]
             #s, a, r, s' where s = (down, toGo, endzoneDistance), a = action, r = reward, s' = next state or 'TERMINAL'
-            newState = [self.createState(down, toGo, endzoneDistance) , currentAction, self.createReward(EPB, EPA), 'TERMINAL' if self.isTerminalState(down, toGo, currentAction, detail) else '']
+            newState = [self.createState(int(down), int(toGo), int(endzoneDistance)) , currentAction, self.createReward(EPB, EPA), 'TERMINAL' if self.isTerminalState(down, toGo, currentAction, detail) else '']
             if self.previousState and not 'TERMINAL' in self.previousState[3]:
                 self.previousState[3] = newState[0]
             self.data.append(newState)
@@ -134,4 +136,25 @@ class csvParser(object):
         
 example = csvParser('data/sfVsJaxWeek10.csv', 'data/sfDrivesWeek10.csv', 'SFO')
 example.readLine()
-print(example.data)
+
+#### ADDED #####
+def convert_to_csv(data):
+    # Define data types for each column
+    # dtypes = {'State': list, 'Action': int, 'Reward': float, 'Next_State': list}
+    df = pd.DataFrame(data, columns=['State', 'Action', 'Reward', 'Next_State'])
+
+    # Convert 'State' and 'Next_State' columns to lists of integers
+    df['State'] = df['State'].apply(list)
+    df['Next_State'] = df['Next_State'].apply(list)
+
+    # Specify data types for the other columns
+    dtypes = {'Action': int, 'Reward': float}
+
+    # Convert data types
+    df = df.astype(dtypes)
+
+    df.to_csv("/Users/elychen/CS238/cs238_Final_Project/data_cleaned/" + "test.csv", index=False, sep=';')
+
+    print(df)
+
+convert_to_csv(example.data)
