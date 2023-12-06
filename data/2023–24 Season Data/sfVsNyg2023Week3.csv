@@ -1,0 +1,172 @@
+﻿Quarter,Time,Down,ToGo,Location,NYG,SFO,Detail,EPB,EPA
+,,,,,,,"Giants won the coin toss and deferred, 49ers to receive the opening kickoff.",,
+1,15:00,,,NYG 35,0,0,"Graham Gano kicks off 65 yards, touchback.",0,0.61
+1,15:00,1,10,SFO 25,0,0,Christian McCaffrey left end for 4 yards (tackle by Xavier McKinney),0.61,0.6
+1,14:21,2,6,SFO 29,0,0,Brock Purdy pass incomplete short left intended for Deebo Samuel,0.6,-0.1
+1,14:18,3,6,SFO 29,0,0,Brock Purdy pass complete short left to Deebo Samuel for 14 yards (tackle by Xavier McKinney and Oshane Ximines),-0.1,1.8
+1,13:36,1,10,SFO 43,0,0,Brock Purdy pass incomplete deep right intended for George Kittle,1.8,1.25
+1,13:30,2,10,SFO 43,0,0,Christian McCaffrey left tackle for 10 yards (tackle by Rakeem Nunez-Roches),1.25,2.46
+1,12:51,1,10,NYG 47,0,0,Christian McCaffrey right end for 6 yards (tackle by Bobby Okereke),2.46,2.72
+1,12:14,2,4,NYG 41,0,0,Brock Purdy sacked by Kayvon Thibodeaux for -4 yards,2.72,1.49
+1,11:32,3,8,NYG 45,0,0,Brock Purdy pass complete short middle to Jauan Jennings for 24 yards (tackle by Tre Hawkins),1.49,4.17
+1,10:49,1,10,NYG 21,0,0,Brock Purdy pass complete short right to Christian McCaffrey for 8 yards (tackle by Bobby Okereke),4.17,4.95
+1,10:15,2,2,NYG 13,0,0,Christian McCaffrey up the middle for 1 yard (tackle by Leonard Williams),4.95,4.49
+1,9:41,3,1,NYG 12,0,0,Brock Purdy up the middle for 1 yard (tackle by Bobby Okereke),4.49,4.84
+1,9:01,1,10,NYG 11,0,0,Brock Purdy pass incomplete short right intended for Deebo Samuel,4.84,4.14
+1,8:56,2,10,NYG 11,0,0,Brock Purdy pass incomplete short middle intended for Deebo Samuel (defended by Adoree' Jackson),4.14,3.13
+1,8:53,3,10,NYG 11,0,0,Brock Purdy pass incomplete short left intended for Deebo Samuel (defended by Deonte Banks),3.13,2.7
+1,8:47,4,10,NYG 11,0,3,Jake Moody 28 yard field goal good,2.7,3
+1,8:44,,,SFO 35,0,3,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+1,8:44,1,10,NYG 25,0,3,Daniel Jones pass incomplete deep left intended for Darius Slayton,0.61,0.06
+1,8:39,2,10,NYG 25,0,3,Matt Breida right end for 6 yards (tackle by Charvarius Ward),0.06,0.17
+1,8:05,3,4,NYG 31,0,3,Daniel Jones pass complete short middle to Wan'Dale Robinson for 7 yards (tackle by Talanoa Hufanga),0.17,1.47
+1,7:27,1,10,NYG 38,0,3,Daniel Jones pass complete short left to Daniel Bellinger for 8 yards (tackle by Dre Greenlaw),1.47,2
+1,6:55,2,2,NYG 46,0,3,Matt Breida right tackle for 1 yard (tackle by Nick Bosa),2,1.42
+1,6:27,3,1,NYG 47,0,3,Daniel Jones up the middle for 1 yard (tackle by Deommodore Lenoir and Fred Warner),1.42,2.13
+1,5:54,1,10,NYG 48,0,3,Daniel Jones pass complete short left to Parris Campbell for 4 yards (tackle by Deommodore Lenoir),2.13,2.12
+1,5:25,2,6,SFO 48,0,3,Daniel Jones pass complete short right to Gary Brightwell for 18 yards (tackle by Dre Greenlaw),2.12,3.58
+1,4:45,1,10,SFO 30,0,3,Daniel Jones pass incomplete short left intended for Gary Brightwell,3.58,3.03
+1,4:40,2,10,SFO 30,0,3,Gary Brightwell up the middle for 2 yards (tackle by Tashaun Gipson and Javon Hargrave),3.03,2.61
+1,4:00,3,8,SFO 28,0,3,Daniel Jones pass complete short left to Parris Campbell for 2 yards (tackle by Isaiah Oliver),2.61,1.76
+1,3:23,4,6,SFO 26,3,3,Graham Gano 44 yard field goal good,1.76,3
+1,3:18,,,NYG 35,3,3,"Graham Gano kicks off 65 yards, touchback.",0,0.61
+1,3:18,1,10,SFO 25,3,3,Elijah Mitchell up the middle for 2 yards (tackle by A'Shawn Robinson),0.61,0.33
+1,2:36,2,8,SFO 27,3,3,Brock Purdy pass complete short left to George Kittle for 15 yards (tackle by Xavier McKinney),0.33,1.73
+1,2:08,1,10,SFO 42,3,3,Elijah Mitchell left tackle for 1 yard (tackle by A'Shawn Robinson and Dexter Lawrence),1.73,1.32
+1,1:49,2,9,SFO 43,3,3,Brock Purdy pass incomplete deep right,1.32,0.63
+1,1:42,3,9,SFO 43,3,3,Brock Purdy pass complete short left to Jauan Jennings for 7 yards (tackle by Oshane Ximines),0.63,-0.06
+1,0:53,4,2,SFO 50,3,3,"Mitch Wishnowsky punts 43 yards, returned by Eric Gray for 3 yards (tackle by Ronnie Bell)",-0.06,0.38
+1,0:44,1,10,NYG 10,3,3,Daniel Jones sacked by Nick Bosa for -8 yards,-0.38,-1.36
+1,0:03,2,18,NYG 2,3,3,Matt Breida left guard for 2 yards (tackle by Dre Greenlaw),-1.36,-2.12
+2,15:00,3,16,NYG 4,3,3,Daniel Jones pass complete short right to Wan'Dale Robinson for 8 yards (tackle by Fred Warner and Isaiah Oliver),-2.12,-2.49
+2,14:21,4,8,NYG 12,3,3,"Jamie Gillan punts 60 yards, fair catch by Ray-Ray McCloud at SF-28",-2.49,-0.81
+2,14:13,1,10,SFO 28,3,3,Brock Purdy pass incomplete short middle intended for Deebo Samuel (defended by D.J. Davidson),0.81,0.26
+2,14:09,2,10,SFO 28,3,3,"Brock Purdy pass complete short middle to Deebo Samuel for 7 yards (tackle by Xavier McKinney). Penalty on Trent Williams: Ineligible Downfield Pass, 5 yards (accepted) (no play)",0.26,-0.41
+2,13:51,2,15,SFO 23,3,3,Brock Purdy pass incomplete short right intended for George Kittle,-0.41,-1.09
+2,13:48,3,15,SFO 23,3,3,Brock Purdy pass complete short left to Deebo Samuel for 30 yards (tackle by Xavier McKinney),-1.09,2.46
+2,13:06,1,10,NYG 47,3,3,Christian McCaffrey left guard for 9 yards (tackle by Bobby Okereke and Micah McFadden),2.46,3.13
+2,12:26,2,1,NYG 38,3,3,Christian McCaffrey left guard for 10 yards (tackle by Jason Pinnock),3.13,3.71
+2,11:40,1,10,NYG 28,3,3,Brock Purdy pass complete short left to Deebo Samuel for -1 yards (tackle by Micah McFadden),3.71,3.03
+2,10:55,2,11,NYG 29,3,3,Brock Purdy pass complete short right to Elijah Mitchell for -2 yards (tackle by Micah McFadden),3.03,2.08
+2,10:17,3,13,NYG 31,3,3,Brock Purdy pass complete short right to Christian McCaffrey for 17 yards (tackle by Leonard Williams),2.08,4.65
+2,9:33,1,10,NYG 14,3,3,Christian McCaffrey left tackle for 4 yards (tackle by Micah McFadden),4.65,4.71
+2,8:53,2,6,NYG 10,3,3,"Christian McCaffrey right tackle for no gain. Penalty on Colton McKivitz: Offensive Holding, 10 yards (offset) . Penalty on Jihad Ward: Face Mask (15 Yards), 15 yards (offset) (no play)",4.71,4.71
+2,8:37,2,6,NYG 10,3,3,Christian McCaffrey left guard for 1 yard (tackle by Bobby Okereke and Kayvon Thibodeaux),4.71,4.05
+2,7:53,3,5,NYG 9,3,9,"Brock Purdy pass complete short left to Ronnie Bell for 9 yards, touchdown. Penalty on Oshane Ximines: Defensive Offside, 5 yards (declined)",4.05,7
+2,7:49,,,NYG 15,3,10,Jake Moody kicks extra point good,0,0
+2,7:49,,,SFO 35,3,10,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+2,7:49,1,10,NYG 25,3,10,Daniel Jones pass incomplete short left,0.61,0.06
+2,7:41,2,10,NYG 25,3,10,Daniel Jones pass complete short left to Matt Breida for 8 yards (tackle by Fred Warner),0.06,0.43
+2,6:59,3,2,NYG 33,3,10,Daniel Jones sacked by Javon Hargrave for -8 yards,0.43,-1.7
+2,6:21,4,10,NYG 25,3,10,"Jamie Gillan punts 48 yards, fair catch by Ray-Ray McCloud at SF-27",-1.7,-0.74
+2,6:13,1,10,SFO 27,3,10,Brock Purdy pass incomplete short left intended for Deebo Samuel,0.74,0.2
+2,6:08,2,10,SFO 27,3,10,Brock Purdy pass complete short right to Elijah Mitchell for 9 yards (tackle by Kayvon Thibodeaux and Isaiah Simmons),0.2,0.7
+2,5:27,3,1,SFO 36,3,10,Christian McCaffrey left tackle for 12 yards (tackle by Deonte Banks),0.7,2.13
+2,4:46,1,10,SFO 48,3,10,Elijah Mitchell right end for 18 yards (tackle by Xavier McKinney),2.13,3.31
+2,4:06,1,10,NYG 34,3,10,Elijah Mitchell up the middle for 1 yard (tackle by Leonard Williams),3.31,2.91
+2,3:22,2,9,NYG 33,3,10,Brock Purdy pass complete short middle to Ronnie Bell for 15 yards (tackle by Xavier McKinney),2.91,4.37
+2,2:39,1,10,NYG 18,3,10,Elijah Mitchell right tackle for 5 yards (tackle by Micah McFadden),4.37,4.61
+2,2:00,2,5,NYG 13,3,10,"Deebo Samuel left end for 2 yards (tackle by Deonte Banks). Penalty on Trent Williams: Offensive Holding, 10 yards (accepted)",4.61,3.42
+2,1:56,2,13,NYG 21,3,10,Brock Purdy pass complete short right to Christian McCaffrey for 1 yard (tackle by Jihad Ward),3.42,2.87
+2,1:51,,,,,,Timeout #1 by New York Giants,,
+2,1:51,3,12,NYG 20,3,10,Brock Purdy pass complete short right to George Kittle for 11 yards (tackle by Isaiah Simmons and Tre Hawkins),2.87,2.93
+2,1:51,4,3,NYG 9,3,10,"Penalty on Leonard Williams: Roughing the Passer, 5 yards (accepted) (no play)",2.93,6.28
+2,1:44,,,,,,Timeout #2 by New York Giants,,
+2,1:44,1,4,NYG 4,3,16,"Christian McCaffrey up the middle for 4 yards, touchdown",6.28,7
+2,1:40,,,NYG 15,3,17,Jake Moody kicks extra point good,0,0
+2,1:40,,,SFO 35,3,17,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+2,1:40,1,10,NYG 25,3,17,Daniel Jones pass complete short left to Parris Campbell for 2 yards (tackle by Tashaun Gipson),0.61,0.33
+2,1:19,2,8,NYG 27,3,17,Daniel Jones pass complete short middle to Darren Waller for 6 yards (tackle by Fred Warner),0.33,0.43
+2,0:58,3,2,NYG 33,3,17,Daniel Jones pass complete short left to Darren Waller for 5 yards (tackle by George Odum and Dre Greenlaw),0.43,1.47
+2,0:38,1,10,NYG 38,3,17,Daniel Jones pass complete short left to Darius Slayton for 17 yards (tackle by Deommodore Lenoir),1.47,2.59
+2,0:32,1,10,SFO 45,3,17,Daniel Jones pass complete short left to Parris Campbell for 7 yards (tackle by Deommodore Lenoir),2.59,2.99
+2,0:25,,,,,,Timeout #3 by New York Giants,,
+2,0:25,2,3,SFO 38,3,17,Daniel Jones pass incomplete short left intended for Darren Waller,2.99,2.28
+2,0:22,3,3,SFO 38,3,17,Daniel Jones pass incomplete deep right intended for Isaiah Hodgins,2.28,0.72
+2,0:18,4,3,SFO 38,6,17,Graham Gano 57 yard field goal good,0.72,3
+2,0:13,,,NYG 35,6,17,"Graham Gano kicks off 65 yards, touchback.",0,0.61
+2,0:13,1,10,SFO 25,6,17,"Brock Purdy kneels for -1 yards. Penalty on Trent Williams: Unnecessary Roughness / Offense, 15 yards (offset) . Penalty on A'Shawn Robinson: Unnecessary Roughness / Defense, 15 yards (offset)",0.61,0.54
+2,0:06,1,10,SFO 24,6,17,Brock Purdy kneels for -1 yards,0.54,-0.14
+3,15:00,,,SFO 35,6,17,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+3,15:00,1,10,NYG 25,6,17,Gary Brightwell left tackle for 2 yards (tackle by Javon Hargrave and Nick Bosa),0.61,0.33
+3,14:23,2,8,NYG 27,6,17,Daniel Jones pass complete short left to Gary Brightwell for 13 yards (tackle by Tashaun Gipson),0.33,1.6
+3,13:52,1,10,NYG 40,6,17,Gary Brightwell left end for -1 yards (tackle by Oren Burks),1.6,0.92
+3,13:13,2,11,NYG 39,6,17,Daniel Jones left end for 4 yards (tackle by Dre Greenlaw),0.92,0.76
+3,12:32,3,7,NYG 43,6,17,Daniel Jones pass incomplete short right intended for Darius Slayton,0.76,-0.52
+3,12:24,4,7,NYG 43,6,17,"Jamie Gillan punts 49 yards, returned by Ray-Ray McCloud for no gain (tackle by Cam Brown). Penalty on Tre Swilling: Offensive Holding, 4 yards (accepted)",-0.52,0.38
+3,12:14,1,10,SFO 4,6,17,Christian McCaffrey right guard for 3 yards (tackle by A'Shawn Robinson),-0.38,-0.56
+3,11:38,2,7,SFO 7,6,17,"Brock Purdy aborted snap, recovered by Brock Purdy at SF-6 and returned for -1 yards Brock Purdy for no gain",-0.56,-1.19
+3,11:01,3,8,SFO 6,6,17,Brock Purdy pass incomplete short left intended for Jauan Jennings (defended by Darnay Holmes),-1.19,-2.49
+3,10:46,4,8,SFO 6,6,17,"Mitch Wishnowsky punts 46 yards, fair catch by Eric Gray at NYG-48. Penalty on Shemar Jean-Charles: Fair Catch Interference, 15 yards (accepted)",-2.49,-3.12
+3,10:46,1,10,SFO 37,6,17,Daniel Jones pass complete short right to Parris Campbell for 7 yards (tackle by Charvarius Ward and Oren Burks),3.12,3.52
+3,10:11,2,3,SFO 30,6,17,"Daniel Jones pass incomplete deep left intended for Darren Waller. Penalty on Deommodore Lenoir: Defensive Pass Interference, 22 yards (accepted) (no play)",3.52,5.37
+3,10:06,1,8,SFO 8,12,17,"Matt Breida right tackle for 8 yards, touchdown",5.37,7
+3,10:00,,,SFO 2,12,17,"Two Point Attempt: Daniel Jones pass incomplete, sacked by Daniel Jones sacked by",1,-1
+3,10:00,,,NYG 35,12,17,"Graham Gano kicks off 65 yards, touchback.",0,0.61
+3,10:00,1,10,SFO 25,12,17,Brock Purdy pass complete deep middle to Deebo Samuel for 40 yards (tackle by Micah McFadden),0.61,3.25
+3,9:09,1,10,NYG 35,12,17,Brock Purdy sacked by and D.J. Davidson for -6 yards and Leonard Williams for -6 yards,3.25,1.89
+3,8:26,2,16,NYG 41,12,17,Brock Purdy pass complete short right to George Kittle for 12 yards (tackle by Xavier McKinney),1.89,2.81
+3,7:42,3,4,NYG 29,12,17,"Brock Purdy pass incomplete deep left intended for Deebo Samuel. Penalty on Darnay Holmes: Defensive Holding, 5 yards (accepted) (no play)",2.81,3.97
+3,7:37,1,10,NYG 24,12,17,Christian McCaffrey up the middle for 4 yards (tackle by Dexter Lawrence),3.97,3.97
+3,6:56,2,6,NYG 20,12,17,Brock Purdy pass complete short left to Christian McCaffrey for 6 yards (tackle by Adoree' Jackson),3.97,4.65
+3,6:26,1,10,NYG 14,12,17,Christian McCaffrey right guard for 6 yards (tackle by Bobby Okereke),4.65,5.09
+3,5:46,2,4,NYG 8,12,17,Christian McCaffrey right end for -4 yards (tackle by Micah McFadden),5.09,3.43
+3,5:02,3,8,NYG 12,12,17,"Brock Purdy pass incomplete short middle intended for George Kittle. Penalty on Kayvon Thibodeaux: Illegal Contact, 5 yards (accepted) (no play)",3.43,5.6
+3,4:58,1,7,NYG 7,12,17,Christian McCaffrey up the middle for 4 yards (tackle by Jason Pinnock and Dexter Lawrence),5.6,5.53
+3,4:20,2,3,NYG 3,12,17,Brock Purdy pass incomplete short left,5.53,4.72
+3,4:15,3,3,NYG 3,12,17,Brock Purdy pass incomplete short right,4.72,3.04
+3,4:12,4,3,NYG 3,12,20,Jake Moody 21 yard field goal good,3.04,3
+3,4:08,,,SFO 35,12,20,"Jake Moody kicks off 62 yards, returned by Eric Gray for 16 yards (tackle by George Odum)",0,0.15
+3,4:04,1,10,NYG 19,12,20,Daniel Jones pass complete short right to Wan'Dale Robinson for 2 yards (tackle by Oren Burks and Tashaun Gipson),0.15,-0.06
+3,3:23,2,8,NYG 21,12,20,"Penalty on Daniel Bellinger: False Start, 5 yards (accepted) (no play)",-0.06,-0.87
+3,3:14,2,13,NYG 16,12,20,Daniel Jones pass complete short left to Wan'Dale Robinson for 4 yards (tackle by Tashaun Gipson),-0.87,-0.94
+3,2:45,3,9,NYG 20,12,20,"Daniel Jones pass incomplete short right intended for Darius Slayton. Penalty on Marcus McKethan: Offensive Holding, 10 yards (offset) . Penalty on Isaiah Oliver: Defensive Holding, 5 yards (offset) (no play)",-0.94,-0.94
+3,2:27,3,9,NYG 20,12,20,Daniel Jones pass incomplete deep right intended for Darren Waller,-0.94,-2.03
+3,2:22,4,9,NYG 20,12,20,"Jamie Gillan punts 49 yards, fair catch by Ray-Ray McCloud at SF-31",-2.03,-1
+3,2:13,,,,,,Timeout #1 by San Francisco 49ers,,
+3,2:13,1,10,SFO 31,12,20,Brock Purdy pass complete short left to George Kittle for 8 yards (tackle by Micah McFadden),1,1.54
+3,1:37,2,2,SFO 39,12,20,Elijah Mitchell left end for 8 yards (tackle by Bobby Okereke),1.54,2.06
+3,0:54,1,10,SFO 47,12,20,Elijah Mitchell left tackle for 1 yard (tackle by A'Shawn Robinson),2.06,1.65
+3,0:24,2,9,SFO 48,12,20,Brock Purdy pass complete short left to George Kittle for 29 yards (tackle by Jason Pinnock and Bobby Okereke),1.65,4.04
+4,15:00,1,10,NYG 23,12,20,"Brock Purdy pass incomplete deep left intended for Christian McCaffrey. Penalty on Tre Hawkins: Defensive Holding, 5 yards (accepted) (no play)",4.04,4.37
+4,14:55,1,10,NYG 18,12,20,Elijah Mitchell right guard for -2 yards (tackle by Micah McFadden),4.37,3.56
+4,14:13,2,12,NYG 20,12,20,Brock Purdy pass complete short left to Elijah Mitchell for -5 yards (tackle by Darnay Holmes),3.56,2.21
+4,13:30,3,17,NYG 25,12,20,Brock Purdy pass complete short left to George Kittle for 7 yards (tackle by Isaiah Simmons),2.21,2.25
+4,12:51,4,10,NYG 18,12,23,Jake Moody 36 yard field goal good,2.25,3
+4,12:47,,,SFO 35,12,23,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+4,12:47,1,10,NYG 25,12,23,"Daniel Jones scrambles for no gain. Penalty on Joshua Ezeudu: Offensive Facemask, 12 yards (accepted) (no play)",0.61,-0.64
+4,12:32,1,22,NYG 13,12,23,Daniel Jones pass complete short left to Darren Waller for 9 yards (tackle by Deommodore Lenoir),-0.64,-0.34
+4,11:57,2,13,NYG 22,12,23,Daniel Jones pass complete short right to Parris Campbell for 2 yards (tackle by Isaiah Oliver),-0.34,-0.76
+4,11:16,3,11,NYG 24,12,23,Daniel Jones pass incomplete short middle intended for Darren Waller,-0.76,-1.77
+4,11:12,4,11,NYG 24,12,23,"Jamie Gillan punts 58 yards, returned by Ray-Ray McCloud for 12 yards (tackle by Darnay Holmes)",-1.77,-0.94
+4,11:00,1,10,SFO 30,12,23,Brock Purdy pass complete short middle to Deebo Samuel for 19 yards (tackle by Adoree' Jackson and Bobby Okereke),0.94,2.19
+4,10:20,1,10,SFO 49,12,23,Brock Purdy pass complete short right to George Kittle for 8 yards (tackle by Jason Pinnock),2.19,2.73
+4,9:37,2,2,NYG 43,12,23,Kyle Juszczyk up the middle for 3 yards (tackle by Micah McFadden and Tre Hawkins),2.73,2.92
+4,8:56,1,10,NYG 40,12,23,Christian McCaffrey right tackle for 4 yards (tackle by Jason Pinnock and Tre Hawkins),2.92,2.91
+4,8:15,2,6,NYG 36,12,23,Christian McCaffrey left guard for 4 yards (tackle by Dexter Lawrence),2.91,2.74
+4,7:31,3,2,NYG 32,12,23,Brock Purdy pass complete short left to Christian McCaffrey for 2 yards (tackle by Adoree' Jackson),2.74,3.58
+4,6:51,1,10,NYG 30,12,23,Christian McCaffrey left guard for 3 yards (tackle by Dexter Lawrence and Tre Hawkins),3.58,3.44
+4,6:05,2,7,NYG 27,12,29,"Brock Purdy pass complete deep right to Deebo Samuel for 27 yards, touchdown",3.44,7
+4,5:58,,,NYG 15,12,30,Jake Moody kicks extra point good,0,0
+4,5:58,,,SFO 35,12,30,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+4,5:58,1,10,NYG 25,12,30,Daniel Jones pass incomplete short right intended for Darius Slayton (defended by Charvarius Ward),0.61,0.06
+4,5:53,2,10,NYG 25,12,30,"Daniel Jones pass complete short right to Darius Slayton for 3 yards (tackle by Charvarius Ward). Penalty on Dre Greenlaw: Unnecessary Roughness / Defense, 15 yards (accepted)",0.06,1.8
+4,5:33,1,10,NYG 43,12,30,Daniel Jones pass complete short right to Darius Slayton for 12 yards (tackle by Charvarius Ward),1.8,2.59
+4,4:56,1,10,SFO 45,12,30,Daniel Jones pass complete short right to Matt Breida for 2 yards (tackle by Oren Burks),2.59,2.31
+4,4:26,2,8,SFO 43,12,30,Daniel Jones pass complete short right to Matt Breida for -9 yards (tackle by Oren Burks),2.31,0.43
+4,3:49,3,17,NYG 48,12,30,Daniel Jones pass short right (defended by Charvarius Ward) intended for Darren Waller is intercepted by Talanoa Hufanga at SF-40 and returned for 8 yards (tackle by Matt Breida),0.43,-2.13
+4,3:39,1,10,SFO 48,12,30,Elijah Mitchell up the middle for 2 yards (tackle by A'Shawn Robinson and Dexter Lawrence),2.13,1.85
+4,3:35,,,,,,Timeout #1 by New York Giants,,
+4,3:35,2,8,SFO 50,12,30,Elijah Mitchell left end for 3 yards (tackle by Tre Hawkins),1.85,1.55
+4,3:30,,,,,,Timeout #2 by New York Giants,,
+4,3:30,3,5,NYG 47,12,30,Elijah Mitchell for 3 yards (tackle by Dexter Lawrence),1.55,0.33
+4,3:25,,,,,,Timeout #3 by New York Giants,,
+4,3:25,4,2,NYG 44,12,30,Mitch Wishnowsky punts 39 yards out of bounds,0.33,0.38
+4,3:18,1,10,NYG 5,12,30,Gary Brightwell up the middle for 2 yards (tackle by Isaiah Oliver),-0.38,-0.63
+4,2:54,2,8,NYG 7,12,30,Tyrod Taylor scrambles up the middle for 2 yards (tackle by Clelin Ferrell),-0.63,-0.95
+4,2:18,3,6,NYG 9,12,30,Tyrod Taylor pass incomplete short right intended for Wan'Dale Robinson,-0.95,-2.49
+4,2:13,4,6,NYG 9,12,30,"Jamie Gillan punts 52 yards, returned by Ray-Ray McCloud for 10 yards (tackle by Carter Coughlin)",-2.49,-2.19
+4,2:01,1,10,SFO 49,12,30,Jordan Mason right end for 5 yards (tackle by Isaiah Simmons),2.19,2.32
+4,1:55,2,5,NYG 46,12,30,Jordan Mason up the middle for 1 yard (tackle by Leonard Williams and Rakeem Nunez-Roches),2.32,1.75
+4,1:10,3,4,NYG 45,12,30,Jordan Mason up the middle for 5 yards (tackle by Leonard Williams),1.75,2.92
+4,0:29,1,10,NYG 40,12,30,Sam Darnold kneels for -1 yards,2.92,2.24
