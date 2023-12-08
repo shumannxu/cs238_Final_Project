@@ -1,0 +1,161 @@
+﻿Quarter,Time,Down,ToGo,Location,ARI,SFO,Detail,EPB,EPA
+,,,,,,,"49ers won the coin toss and deferred, Cardinals to receive the opening kickoff.",,
+1,15:00,,,SFO 35,0,0,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+1,15:00,1,10,ARI 25,0,0,Joshua Dobbs pass complete short left to Marquise Brown for 6 yards (tackle by Fred Warner),0.61,0.87
+1,14:25,2,4,ARI 31,0,0,James Conner right guard for 2 yards (tackle by Dre Greenlaw and Javon Hargrave),0.87,0.43
+1,13:55,3,2,ARI 33,0,0,Joshua Dobbs pass incomplete short right intended for Zach Ertz,0.43,-1.18
+1,13:34,4,2,ARI 33,0,0,"Penalty on Owen Pappoe: False Start, 5 yards (accepted) (no play)",-1.18,-1.5
+1,13:34,4,7,ARI 28,0,0,"Nolan Cooney punts 49 yards, returned by Ray-Ray McCloud for 15 yards (tackle by Trey McBride and Jesse Luketa)",-1.5,-1.47
+1,13:23,1,10,SFO 38,0,0,Christian McCaffrey up the middle for 6 yards (tackle by Leki Fotu and Zeke Turner),1.47,1.73
+1,12:50,2,4,SFO 44,0,0,Deebo Samuel left end for 3 yards (tackle by Kei'Trel Clark),1.73,1.42
+1,12:15,3,1,SFO 47,0,0,Christian McCaffrey left tackle for 6 yards (tackle by Victor Dimukeje and Zeke Turner),1.42,2.46
+1,11:39,1,10,ARI 47,0,0,"Brock Purdy pass incomplete intended for Kyle Juszczyk. Penalty on Kyzir White: Defensive Holding, 5 yards (accepted) (no play)",2.46,2.79
+1,11:34,1,10,ARI 42,0,0,Brock Purdy pass complete short middle to Brandon Aiyuk for 16 yards (tackle by Zeke Turner and K'Von Wallace),2.79,3.84
+1,10:54,1,10,ARI 26,0,0,Brock Purdy pass complete short middle to Christian McCaffrey for 12 yards (tackle by Marco Wilson and K'Von Wallace),3.84,4.65
+1,10:10,1,10,ARI 14,0,0,"Brock Purdy pass complete short left to Christian McCaffrey for 10 yards (tackle by Zeke Turner). Penalty on Zeke Turner: Face Mask (15 Yards), 2 yards (accepted)",4.65,6.74
+1,9:51,1,2,ARI 2,0,0,Christian McCaffrey up the middle for 1 yard (tackle by Leki Fotu and Zeke Turner),6.74,5.91
+1,9:10,2,1,ARI 1,0,6,"Christian McCaffrey up the middle for 1 yard, touchdown",5.91,7
+1,9:07,,,ARI 15,0,7,Jake Moody kicks extra point good,0,0
+1,9:07,,,SFO 35,0,7,"Jake Moody kicks off 62 yards, returned by Greg Dortch for 13 yards (tackle by Ji'Ayir Brown)",0,-0.14
+1,9:03,1,10,ARI 16,0,7,Joshua Dobbs pass incomplete short left intended for Rondale Moore,-0.14,-0.66
+1,8:59,2,10,ARI 16,0,7,"James Conner for no gain (tackle by Nick Bosa). Penalty on Javon Hargrave: Defensive Holding, 5 yards (accepted) (no play)",-0.66,0.34
+1,8:39,1,10,ARI 21,0,7,"Penalty on D.J. Humphries: False Start, 5 yards (accepted) (no play)",0.34,-0.22
+1,8:26,1,15,ARI 16,0,7,Joshua Dobbs pass complete short left to James Conner for 4 yards (tackle by Dre Greenlaw and Fred Warner),-0.22,-0.34
+1,7:44,2,11,ARI 20,0,7,Joshua Dobbs left tackle for 3 yards (tackle by Dre Greenlaw),-0.34,-0.63
+1,7:02,3,8,ARI 23,0,7,Joshua Dobbs pass complete short left to Marquise Brown for 11 yards (tackle by Isaiah Oliver),-0.63,1.2
+1,6:22,1,10,ARI 34,0,7,"Joshua Dobbs aborted snap, recovered by Joshua Dobbs at ARI-34 and returned for -2 yards (tackle by Nick Bosa)",1.2,0.39
+1,5:47,2,12,ARI 32,0,7,Joshua Dobbs pass complete short left to Michael Wilson for 4 yards (tackle by Deommodore Lenoir and Talanoa Hufanga),0.39,0.23
+1,5:04,3,8,ARI 36,0,7,Joshua Dobbs pass complete short right to Zach Ertz for no gain (tackle by Dre Greenlaw),0.23,-0.98
+1,4:27,4,8,ARI 36,0,7,"Nolan Cooney punts 48 yards, returned by Ray-Ray McCloud for 9 yards (tackle by Zach Pascal and Zeke Turner)",-0.98,-0.61
+1,4:23,1,10,SFO 25,0,7,Christian McCaffrey right tackle for 5 yards (tackle by K'Von Wallace),0.61,0.74
+1,3:48,2,5,SFO 30,0,7,Christian McCaffrey up the middle for 12 yards (tackle by Kei'Trel Clark),0.74,1.73
+1,3:08,1,10,SFO 42,0,7,Brock Purdy pass complete short right to Jordan Mason for 13 yards (tackle by Jalen Thompson),1.73,2.59
+1,2:27,1,10,ARI 45,0,7,Jordan Mason up the middle for 4 yards (tackle by Zaven Collins and Kevin Strong),2.59,2.58
+1,1:51,2,6,ARI 41,0,7,Christian McCaffrey right end for 2 yards (tackle by Dennis Gardeck),2.58,2.15
+1,1:08,3,4,ARI 39,0,7,Christian McCaffrey right guard for no gain (tackle by Zeke Turner),2.15,0.66
+1,0:30,4,4,ARI 39,0,7,Brock Purdy pass complete short right to George Kittle for 9 yards (tackle by K'Von Wallace and Dennis Gardeck),0.66,3.58
+2,15:00,1,10,ARI 30,0,7,Brock Purdy pass complete short left to Christian McCaffrey for 12 yards (tackle by Kyzir White and Zeke Turner),3.58,4.37
+2,14:21,1,10,ARI 18,0,13,"Christian McCaffrey right end for 18 yards, touchdown",4.37,7
+2,14:14,,,ARI 15,0,14,Jake Moody kicks extra point good,0,0
+2,14:14,,,SFO 35,0,14,"Jake Moody kicks off 50 yards, out of bounds",0,1.6
+2,14:14,1,10,ARI 40,0,14,James Conner right end for 6 yards (tackle by Fred Warner and Oren Burks),1.6,1.86
+2,13:35,2,4,ARI 46,0,14,James Conner right guard for no gain (tackle by Fred Warner),1.86,1.16
+2,12:55,3,4,ARI 46,0,14,"Joshua Dobbs pass incomplete intended for Marquise Brown. Penalty on Charvarius Ward: Defensive Pass Interference, 6 yards (accepted) (no play)",1.16,2.39
+2,12:50,1,10,SFO 48,0,14,James Conner left tackle for no gain (tackle by Javon Hargrave),2.39,1.85
+2,12:12,2,10,SFO 48,0,14,"Joshua Dobbs pass incomplete intended for Marquise Brown. Penalty on Paris Johnson: Offensive Holding, 10 yards (accepted) (no play)",1.85,0.5
+2,12:12,2,20,ARI 42,0,14,Joshua Dobbs pass incomplete short middle intended for Marquise Brown,0.5,-0.16
+2,12:09,3,20,ARI 42,0,14,Joshua Dobbs pass complete short middle to Emari Demercado for 13 yards (tackle by Talanoa Hufanga),-0.16,0.27
+2,11:18,4,7,SFO 45,0,14,"Joshua Dobbs scrambles for 6 yards (tackle by Dre Greenlaw) Replay Assistant challenged the first down ruling, and the original play was overturned. Joshua Dobbs scrambles left end for 8 yards (tackle by Dre Greenlaw)",0.27,3.12
+2,11:03,1,10,SFO 37,0,14,Joshua Dobbs pass incomplete deep left intended for Marquise Brown,3.12,2.57
+2,10:58,2,10,SFO 37,0,14,James Conner up the middle for 3 yards (tackle by Javon Kinlaw),2.57,2.28
+2,9:58,3,7,SFO 34,0,14,Joshua Dobbs pass complete short left to Zach Pascal for 9 yards (tackle by Deommodore Lenoir),2.28,3.91
+2,9:39,1,10,SFO 25,0,14,Joshua Dobbs pass complete short left to Zach Pascal for 5 yards (tackle by Deommodore Lenoir and Dre Greenlaw),3.91,4.04
+2,9:10,2,5,SFO 20,0,14,James Conner up the middle for no gain (tackle by Talanoa Hufanga and Drake Jackson),4.04,3.34
+2,8:22,3,5,SFO 20,0,14,Joshua Dobbs pass incomplete short left intended for Zach Ertz,3.34,2.17
+2,8:17,4,5,SFO 20,3,14,Matt Prater 38 yard field goal good,2.17,3
+2,8:14,,,ARI 35,3,14,"Matt Prater kicks off 65 yards, touchback.",0,0.61
+2,8:14,1,10,SFO 25,3,14,Brock Purdy pass complete short left to Brandon Aiyuk for 11 yards (tackle by Marco Wilson),0.61,1.33
+2,7:44,1,10,SFO 36,3,14,Brock Purdy pass complete deep middle to Brandon Aiyuk for 42 yards (tackle by Marco Wilson),1.33,4.11
+2,6:56,1,10,ARI 22,3,14,Brock Purdy pass complete short left to Ray-Ray McCloud for 14 yards (tackle by Kei'Trel Clark),4.11,5.37
+2,6:13,1,8,ARI 8,3,14,Christian McCaffrey right tackle for 2 yards (tackle by Roy Lopez),5.37,4.95
+2,5:29,2,6,ARI 6,3,20,"Brock Purdy pass complete short middle to Christian McCaffrey for 6 yards, touchdown",4.95,7
+2,5:22,,,ARI 15,3,21,Jake Moody kicks extra point good,0,0
+2,5:22,,,SFO 35,3,21,"Jake Moody kicks off 65 yards, touchback.. Penalty on Kris Boyd: Unnecessary Roughness / Offense, 12 yards (accepted)",0,-0.32
+2,5:22,1,10,ARI 13,3,21,James Conner left tackle for 8 yards (tackle by Ambry Thomas and Tashaun Gipson),-0.32,0.35
+2,4:51,2,2,ARI 21,3,21,"Penalty on Elijah Wilkinson: False Start, 5 yards (accepted) (no play)",0.35,-0.44
+2,4:35,2,7,ARI 16,3,21,Joshua Dobbs scrambles up the middle for 5 yards (tackle by Fred Warner),-0.44,-0.47
+2,3:51,3,2,ARI 21,3,21,Joshua Dobbs pass incomplete short middle intended for Rondale Moore,-0.47,-1.96
+2,3:46,4,2,ARI 21,3,21,Zeke Turner left end for 2 yards (tackle by Brayden Willis and Ji'Ayir Brown),-1.96,0.48
+2,2:52,1,10,ARI 23,3,21,James Conner right tackle for 9 yards (tackle by Fred Warner and Tashaun Gipson),0.48,1.15
+2,2:16,2,1,ARI 32,3,21,Joshua Dobbs scrambles right end for 5 yards (tackle by Kevin Givens),1.15,1.4
+2,2:00,1,10,ARI 37,3,21,Joshua Dobbs pass incomplete short right intended for James Conner,1.4,0.86
+2,1:56,2,10,ARI 37,3,21,James Conner right end for 7 yards (tackle by Javon Hargrave and Dre Greenlaw),0.86,1.09
+2,1:15,3,3,ARI 44,3,21,Joshua Dobbs pass complete short left to Marquise Brown for 6 yards (tackle by Deommodore Lenoir),1.09,2.26
+2,0:53,1,10,ARI 50,3,21,Joshua Dobbs pass complete short left to Emari Demercado for 1 yard (tackle by Dre Greenlaw),2.26,1.85
+2,0:42,,,,,,Timeout #1 by Arizona Cardinals,,
+2,0:42,2,9,SFO 49,3,21,Joshua Dobbs pass incomplete deep left intended for Marquise Brown,1.85,1.16
+2,0:37,3,9,SFO 49,3,21,Joshua Dobbs pass complete deep left to Michael Wilson for 33 yards (tackle by Ambry Thomas),1.16,4.51
+2,0:28,,,,,,Timeout #2 by Arizona Cardinals,,
+2,0:28,1,10,SFO 16,9,21,"Joshua Dobbs pass complete deep left to Michael Wilson for 16 yards, touchdown. Penalty on Nick Bosa: Defensive Offside, 5 yards (declined)",4.51,7
+2,0:23,,,,,,Timeout #1 by San Francisco 49ers,,
+2,0:23,,,SFO 15,10,21,Matt Prater kicks extra point good,0,0
+2,0:23,,,ARI 35,10,21,"Matt Prater kicks off 65 yards, touchback.",0,0.61
+2,0:23,1,10,SFO 25,10,21,Brock Purdy kneels for -1 yards,0.61,-0.07
+3,15:00,,,ARI 35,10,21,"Matt Prater kicks off 70 yards, returned by Ray-Ray McCloud for 18 yards (tackle by Kris Boyd)",0,-0.32
+3,14:56,1,10,SFO 13,10,21,Brock Purdy pass complete short left to Willie Snead for 9 yards (tackle by Zaven Collins),-0.32,0.49
+3,14:17,2,1,SFO 22,10,21,Christian McCaffrey left guard for 10 yards (tackle by Dante Stills),0.49,1.07
+3,13:40,1,10,SFO 32,10,21,Brock Purdy pass complete deep right to Brandon Aiyuk for 25 yards (tackle by K'Von Wallace),1.07,2.72
+3,12:58,1,10,ARI 43,10,21,Brock Purdy pass complete short right to Christian McCaffrey for 11 yards (tackle by Kyzir White),2.72,3.45
+3,12:16,1,10,ARI 32,10,21,Deebo Samuel left tackle for -2 yards (tackle by Kei'Trel Clark),3.45,2.63
+3,11:40,2,12,ARI 34,10,21,Brock Purdy sacked by Dennis Gardeck for -12 yards,2.63,0.37
+3,10:52,,,,,,Timeout #1 by San Francisco 49ers,,
+3,10:52,3,24,ARI 46,10,21,Brock Purdy pass incomplete short left intended for Christian McCaffrey,0.37,0.2
+3,10:48,4,24,ARI 46,10,21,Mitch Wishnowsky punts 45 yards downed by Oren Burks,0.2,0.38
+3,10:37,1,10,ARI 1,10,21,Joshua Dobbs up the middle for 2 yards (tackle by Fred Warner),-0.38,-0.63
+3,10:04,2,8,ARI 3,10,21,Joshua Dobbs pass complete short left to Marquise Brown for 7 yards,-0.63,-0.37
+3,9:29,3,1,ARI 10,10,21,Joshua Dobbs up the middle for 2 yards (tackle by Fred Warner),-0.37,-0.35
+3,8:50,1,10,ARI 12,10,21,James Conner left end for 11 yards (tackle by Dre Greenlaw),-0.35,0.48
+3,8:12,1,10,ARI 23,10,21,Joshua Dobbs scrambles left end for 3 yards (tackle by Clelin Ferrell),0.48,0.34
+3,7:34,2,7,ARI 26,10,21,James Conner right tackle for 6 yards (tackle by Fred Warner and Arik Armstead),0.34,0.43
+3,6:53,3,1,ARI 32,10,21,"Joshua Dobbs for 1 yard. Penalty on Arik Armstead: Defensive Offside, 5 yards (accepted) (no play)",0.43,1.4
+3,6:33,1,10,ARI 37,10,21,Joshua Dobbs pass complete deep right to Marquise Brown for 41 yards (tackle by Tashaun Gipson),1.4,4.11
+3,5:58,1,10,SFO 22,10,21,Emari Demercado left tackle for 3 yards (tackle by Deommodore Lenoir),4.11,3.97
+3,5:23,2,7,SFO 19,10,21,Joshua Dobbs pass complete short right to Trey McBride for 5 yards (tackle by Fred Warner),3.97,4.15
+3,5:06,3,2,SFO 14,10,21,Joshua Dobbs right end for 6 yards (tackle by Arik Armstead and Tashaun Gipson),4.15,5.37
+3,4:17,1,8,SFO 8,16,21,"Joshua Dobbs pass complete short middle to Michael Wilson for 8 yards, touchdown",5.37,7
+3,4:12,,,SFO 2,16,21,"Two Point Attempt: James Conner rushes, conversion fails.",1,-1
+3,4:12,,,ARI 35,16,21,"Matt Prater kicks off 65 yards, touchback.",0,0.61
+3,4:12,1,10,SFO 25,16,21,Brock Purdy pass complete deep right to Brandon Aiyuk for 34 yards (tackle by Jalen Thompson),0.61,2.85
+3,3:33,1,10,ARI 41,16,21,Brock Purdy pass complete short left to Ronnie Bell for 7 yards (tackle by Kyzir White),2.85,3.25
+3,2:48,2,3,ARI 34,16,21,Christian McCaffrey up the middle for 10 yards (tackle by Zeke Turner),3.25,3.97
+3,2:04,1,10,ARI 24,16,21,Christian McCaffrey right tackle for -2 yards (tackle by Cameron Thomas),3.97,3.16
+3,1:25,2,12,ARI 26,16,21,Brock Purdy pass complete short left to Christian McCaffrey for 13 yards (tackle by Kyzir White),3.16,4.71
+3,0:40,1,10,ARI 13,16,21,Brock Purdy pass complete short left to Kyle Juszczyk for 4 yards (tackle by K'Von Wallace),4.71,4.77
+4,15:00,2,6,ARI 9,16,21,Brock Purdy pass complete short left to Christian McCaffrey for 7 yards (tackle by Zeke Turner),4.77,6.74
+4,14:25,1,2,ARI 2,16,27,"Christian McCaffrey left guard for 2 yards, touchdown",6.74,7
+4,14:22,,,ARI 15,16,28,Jake Moody kicks extra point good,0,0
+4,14:22,,,SFO 35,16,28,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+4,14:22,1,10,ARI 25,16,28,"Joshua Dobbs right end for 2 yards (tackle by Talanoa Hufanga). Penalty on Trey McBride: Offensive Holding, 10 yards (accepted)",0.61,-0.15
+4,14:01,1,18,ARI 17,16,28,Joshua Dobbs pass complete short right to Zach Ertz for 12 yards (tackle by Charvarius Ward),-0.15,0.6
+4,13:25,2,6,ARI 29,16,28,Joshua Dobbs pass incomplete short right intended for Geoff Swaim,0.6,-0.1
+4,13:22,3,6,ARI 29,16,28,Joshua Dobbs pass complete short left to Michael Wilson for 7 yards (tackle by Isaiah Oliver),-0.1,1.33
+4,12:50,1,10,ARI 36,16,28,Joshua Dobbs pass complete short middle to Marquise Brown for 14 yards (tackle by Charvarius Ward and Tashaun Gipson),1.33,2.26
+4,12:10,1,10,ARI 50,16,28,Joshua Dobbs pass complete short left to Michael Wilson for 3 yards (tackle by Oren Burks),2.26,2.12
+4,11:28,2,7,SFO 47,16,28,Joshua Dobbs scrambles right end for 12 yards (tackle by Talanoa Hufanga),2.12,3.25
+4,10:51,1,10,SFO 35,16,28,Joshua Dobbs right end for no gain (tackle by Dre Greenlaw),3.25,2.7
+4,10:05,2,10,SFO 35,16,28,Joshua Dobbs pass incomplete deep right intended for Zach Ertz,2.7,2.01
+4,9:59,3,10,SFO 35,16,28,Joshua Dobbs sacked by Javon Hargrave for -8 yards,2.01,0.4
+4,9:23,4,18,SFO 43,16,28,Nolan Cooney punts 20 yards downed by Dennis Gardeck,0.4,-0.48
+4,9:13,1,10,SFO 23,16,28,Christian McCaffrey up the middle for 6 yards (tackle by Zaven Collins and Kyzir White),0.48,0.74
+4,8:31,2,4,SFO 29,16,28,Christian McCaffrey left end for 16 yards (tackle by Jalen Thompson),0.74,1.93
+4,7:48,1,10,SFO 45,16,28,Christian McCaffrey for 6 yards (tackle by K'Von Wallace and Dennis Gardeck),1.93,2.19
+4,7:06,2,4,ARI 49,16,28,Deebo Samuel right end for 5 yards (tackle by Kei'Trel Clark),2.19,2.65
+4,6:22,1,10,ARI 44,16,28,Jordan Mason up the middle for 3 yards (tackle by Leki Fotu),2.65,2.52
+4,6:14,,,,,,Timeout #1 by Arizona Cardinals,,
+4,6:14,2,7,ARI 41,16,28,Jordan Mason up the middle for 3 yards (tackle by Roy Lopez and Kyzir White),2.52,2.21
+4,6:08,,,,,,Timeout #2 by Arizona Cardinals,,
+4,6:08,3,4,ARI 38,16,28,Brock Purdy pass complete deep right to Brandon Aiyuk for 20 yards (tackle by Marco Wilson),2.21,4.37
+4,5:25,1,10,ARI 18,16,28,Christian McCaffrey right tackle for no gain (tackle by Leki Fotu),4.37,3.8
+4,5:19,,,,,,Timeout #3 by Arizona Cardinals,,
+4,5:19,2,10,ARI 18,16,28,Christian McCaffrey left end for 3 yards (tackle by Zaven Collins),3.8,3.46
+4,4:34,3,7,ARI 15,16,28,Brock Purdy pass complete short left to Ray-Ray McCloud for 8 yards (tackle by K'Von Wallace),3.46,5.6
+4,3:51,1,7,ARI 7,16,28,Kyle Juszczyk up the middle for 3 yards (tackle by Eric Banks and Kyzir White),5.6,5.34
+4,3:34,2,4,ARI 4,16,28,Christian McCaffrey right tackle for 2 yards (tackle by Roy Lopez and Dante Stills),5.34,4.95
+4,2:23,3,2,ARI 2,16,28,"Brock Purdy pass incomplete. Penalty on Marco Wilson: Defensive Holding, 1 yard (accepted) (no play)",4.95,6.97
+4,2:19,1,1,ARI 1,16,28,Kyle Juszczyk up the middle for no gain (tackle by Kevin Strong),6.97,5.91
+4,2:00,2,1,ARI 1,16,34,"Brock Purdy up the middle for 1 yard, touchdown",5.91,7
+4,1:59,,,ARI 15,16,34,"Penalty on Matt Pryor: False Start, 5 yards (accepted) (no play)",0,0
+4,1:59,,,ARI 20,16,35,Jake Moody kicks extra point good,0,0
+4,1:59,,,SFO 35,16,35,"Jake Moody kicks off 65 yards, touchback.",0,0.61
+4,1:59,1,10,ARI 25,16,35,Joshua Dobbs pass complete short left to Marquise Brown for 11 yards (tackle by Ambry Thomas),0.61,1.33
+4,1:55,1,10,ARI 36,16,35,Joshua Dobbs pass complete short left to Zach Ertz for 7 yards (tackle by Dee Winters),1.33,1.74
+4,1:51,2,3,ARI 43,16,35,Joshua Dobbs pass complete short middle to Emari Demercado for 7 yards (tackle by Isaiah Oliver),1.74,2.26
+4,1:36,1,10,ARI 50,16,35,Joshua Dobbs pass incomplete short middle intended for Emari Demercado,2.26,1.71
+4,1:29,2,10,ARI 50,16,35,Joshua Dobbs pass complete short right to Michael Wilson for 5 yards (tackle by Isaiah Oliver),1.71,1.69
+4,1:09,3,5,SFO 45,16,35,Joshua Dobbs pass complete short middle to Zach Ertz for 15 yards (tackle by George Odum),1.69,3.58
+4,0:48,1,10,SFO 30,16,35,Joshua Dobbs pass complete short right to Zach Ertz for 11 yards (tackle by Kendall Sheffield),3.58,4.31
+4,0:43,1,10,SFO 19,16,35,Joshua Dobbs pass complete short right to Zach Ertz for 8 yards (tackle by Kendall Sheffield),4.31,5.14
+4,0:25,2,2,SFO 11,16,35,Joshua Dobbs pass complete short right to Zach Pascal for -4 yards (tackle by Kendall Sheffield),5.14,3.58
+4,0:16,3,6,SFO 15,16,35,Joshua Dobbs pass incomplete short middle intended for Zach Ertz,3.58,2.47
+4,0:12,4,6,SFO 15,16,35,Joshua Dobbs pass incomplete short right intended for Zach Pascal,2.47,0.22
+4,0:07,1,10,SFO 15,16,35,Sam Darnold kneels for -1 yards,-0.22,-0.82
