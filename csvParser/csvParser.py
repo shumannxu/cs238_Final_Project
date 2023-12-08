@@ -2,6 +2,8 @@ from datetime import datetime, timedelta
 from decimal import Decimal
 import pandas as pd
 import csv
+import os 
+
 class downs(enumerate):
     firstDown = '1'
     secondDown = '2'
@@ -135,11 +137,11 @@ class csvParser(object):
         else:
             return False
         
-example = csvParser('data/2023SeasonData/sfWeek10.csv', 'data/2023SeasonData/sfDrives2023Week10.csv', 'SFO')
-example.readLine()
+# example = csvParser('data/2023SeasonData/sfWeek10.csv', 'data/2023SeasonData/sfDrives2023Week10.csv', 'SFO')
+# example.readLine()
 
 #### ADDED #####
-def convert_to_csv(data):
+def convert_to_csv(data, output_fp):
     # Define data types for each column
     # dtypes = {'State': list, 'Action': int, 'Reward': float, 'Next_State': list}
     df = pd.DataFrame(data, columns=['State', 'Action', 'Reward', 'Next_State'])
@@ -154,8 +156,32 @@ def convert_to_csv(data):
     # Convert data types
     df = df.astype(dtypes)
 
-    df.to_csv("/Users/elychen/CS238/cs238_Final_Project/data_cleaned/" + "test.csv", index=False, sep=';')
+    df.to_csv(output_fp, index=False, sep=';')
 
     print(df)
 
-convert_to_csv(example.data)
+# example = csvParser('data/2023SeasonData/sfWeek10.csv', 'data/2023SeasonData/sfDrives2023Week10.csv', 'SFO')
+# example.readLine()
+# print(example.data)
+# convert_to_csv(example.data)
+
+def cleaned_data_files(year_str):
+    for week_num in range(1, 22):  # for 22_23/21_22, last 19,20,21 is wild, div,conf. 
+        # get data path (have to edit by year)
+        data_path = 'data/2021SeasonData/sfWeek' + str(week_num) + '.csv'
+        data_drive_path = 'data/2021SeasonData/sfDrives2021Week' + str(week_num) + '.csv'
+        # check if the path exists
+        if not os.path.exists(data_path) or not os.path.exists(data_drive_path):
+            continue
+        # try: 
+            # generate data 
+        generated_data = csvParser(data_path, data_drive_path, 'SFO')
+        generated_data.readLine()
+        # save in csv 
+        output_fp = 'data_cleaned/cleaned_2021_data/' + year_str + '_week_' + str(week_num) + '.csv'
+        convert_to_csv(generated_data.data, output_fp)
+        # except:
+            # continue
+
+
+cleaned_data_files("21_22")
