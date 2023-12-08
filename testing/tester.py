@@ -3,11 +3,12 @@ import numpy as np
 import pandas as pd 
 import random 
 import ast  # Import the ast module for literal_eval
+import matplotlib.pyplot as plt 
 
 # number of states to test (Assumption: 1 game = 100 states)
 NUMBER_OF_STATES_TO_TEST = 100 
 # number of games to test 
-NUMBER_OF_GAMES_TO_PLAY = 10000
+NUMBER_OF_GAMES_TO_PLAY = 5000
 # to denote s numerical value for terminal state 
 TERMINAL_STATE_VALUE = 10000
 # size of state space (+1 to accommodate for terminal state)
@@ -130,6 +131,7 @@ This function returns average score per game for each of the 4 strategies.
 def simulate_games(states_idx, probability_states, expected_value_table, 
                   policy_table_model_free, policy_table_model_based):
     
+    game_history = [[], [], [], []]
     avg_model_based, avg_model_free, avg_random, avg_always_same = 0,0,0,0
     wins = [0,0,0,0]
 
@@ -146,6 +148,12 @@ def simulate_games(states_idx, probability_states, expected_value_table,
         
         print(model_free_score, model_based_score, random_score, always_same_score)
 
+        # Update History 
+        game_history[0].append(model_free_score)
+        game_history[1].append(model_based_score)
+        game_history[2].append(random_score)
+        game_history[3].append(always_same_score)
+
         # Update scores 
         avg_model_free += model_free_score
         avg_model_based += model_based_score
@@ -155,7 +163,7 @@ def simulate_games(states_idx, probability_states, expected_value_table,
         # Update win count 
         wins[np.argmax([model_free_score, model_based_score, random_score, always_same_score])] += 1
     
-    return (avg_model_based, avg_model_free, avg_random, avg_always_same, wins)
+    return (avg_model_based, avg_model_free, avg_random, avg_always_same, wins, game_history)
 
 """
 Prints the average score of EPA-EPB for each state,action in a simulated game. 
@@ -210,9 +218,10 @@ def main():
     ###### Step 4: Play Games & Test Scores for Results ######
 
     # simulate 10000 games, where each game has 100 states sampled based on frequency distribution
-    (avg_model_based, avg_model_free, avg_random, avg_always_same, wins) = simulate_games(states_idx, probability_states, 
+    (avg_model_based, avg_model_free, avg_random, avg_always_same, wins, game_history) = simulate_games(states_idx, probability_states, 
                                                                                           expected_value_table, policy_table_model_free, 
                                                                                           policy_table_model_based)
+    
     # compute the average score for each policies 
     avg_model_free /= NUMBER_OF_GAMES_TO_PLAY
     avg_model_based /= NUMBER_OF_GAMES_TO_PLAY
@@ -225,6 +234,26 @@ def main():
     print("Avg Score of Playing Random Action:", avg_random, "| won", wins[2], "times")
     print("Avg Score of Always Playing Same Action:", avg_always_same, "| won", wins[3], "times\n")
 
+    # draw results 
+    X = [i for i in range(1, 1+NUMBER_OF_GAMES_TO_PLAY)]
+    Y_model_free = game_history[0]
+    Y_model_based = game_history[1]
+    Y_random = game_history[2]
+    Y_always_same_action = game_history[3]
+
+    # Plotting the lines
+    plt.plot(X, Y_model_free, label="model-free", linewidth=0.7, color="blue")
+    plt.plot(X, Y_model_based, label="model-based", linewidth=0.7, color="red")
+    plt.plot(X, Y_random, label="random", linewidth=0.7, color="orange")
+    plt.plot(X, Y_always_same_action, label="always-same-action", linewidth=0.7, color='green')
+
+    # Adding labels and title
+    plt.xlabel('Number of Games')
+    plt.ylabel('Average EPA-EPB Score Per Game')
+    plt.title('Performance Comparison')
+    plt.legend()
+    # plt.grid(True)
+    plt.show()
 
 if __name__ == '__main__':
     main()
