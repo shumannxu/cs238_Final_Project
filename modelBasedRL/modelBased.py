@@ -114,11 +114,11 @@ def write_policy_file(filename, policy):
 
 
 def main():
-    outputfilename = "../results/output_test3.csv"
+    outputfilename = "results/model_based_test3.csv"
 
     # Folders containing the data
-    folder1 = "../data_cleaned/cleaned_2022_data"
-    folder2 = "../data_cleaned/cleaned_2023_data"
+    folder1 = "data_cleaned/cleaned_2022_data"
+    folder2 = "data_cleaned/cleaned_2023_data"
 
     # Read and combine data from both folders
     combined_data = read_data_from_folders([folder1, folder2])
