@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from decimal import Decimal
 import pandas as pd
-
+import csv
 class downs(enumerate):
     firstDown = '1'
     secondDown = '2'
@@ -47,10 +47,11 @@ class csvParser(object):
 
     def readLine(self):
         self.file.readline()
-        for row in self.file:
-            if row == '\n':
+        csv_reader = csv.reader(self.file)
+        for row in csv_reader:
+            if not row or row == ['']:
                 break
-            quarter,time,down,toGo,location,home,away,detail,EPB,EPA = row.split(',')
+            quarter, time, down, toGo, location, home, away, detail, EPB, EPA = row
             endzoneDistance = None
             self.previousState = None
             self.currPossession = self.isTargetPossession(quarter, time)
@@ -134,7 +135,7 @@ class csvParser(object):
         else:
             return False
         
-example = csvParser('data/sfVsJaxWeek10.csv', 'data/sfDrivesWeek10.csv', 'SFO')
+example = csvParser('data/2023SeasonData/sfWeek10.csv', 'data/2023SeasonData/sfDrives2023Week10.csv', 'SFO')
 example.readLine()
 
 #### ADDED #####
