@@ -16,14 +16,14 @@ STATE_SPACE = 10001
 # size of action space 
 ACTION_SPACE = 4
 # gamma value 
-GAMMA = 0.95
+GAMMA = 0.9
 # learning rate
 LEARNING_RATE = 0.1
 # number of passings 
 NUMBER_OF_PASSES = 1
 
 class QLearningMDP():
-    # Action space A: {kickFG, Pass, Run, Punt}
+    # Action space A: {Pass, Run, kickFG, Punt}
     def __init__(self, action_space, state_space, gamma, Q, 
                  TrackingTable, learning_rate, data, curdown_togo_fp_table):
         # action space 
