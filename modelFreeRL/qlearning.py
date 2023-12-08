@@ -1,5 +1,6 @@
 import numpy as np
 import sys
+import os 
 import pandas as pd 
 import scipy 
 import cvxpy as cp 
@@ -19,7 +20,7 @@ GAMMA = 0.95
 # learning rate
 LEARNING_RATE = 0.1
 # number of passings 
-NUMBER_OF_PASSES = 10
+NUMBER_OF_PASSES = 1
 
 class QLearningMDP():
     # Action space A: {kickFG, Pass, Run, Punt}
@@ -89,24 +90,27 @@ def write_policy_file(filename, policy):
         for i in range(len(policy)):
             f.write(str(int(policy[i])) + "\n")
 
-def main():
-    
-    # choose input filename 
-    inputfilepath = "/Users/elychen/CS238/cs238_Final_Project/modelFreeRL/test.csv"
-    # choose output filename 
-    outputfilename = "/Users/elychen/CS238/cs238_Final_Project/results/output_test2.csv"
+def process_data(inputfilepath):
+    # check if path exists
+    if not os.path.exists(inputfilepath):
+        return None 
 
     # load data into numpy array
     df = pd.read_csv(inputfilepath, sep=";")
     df["State"] = df["State"].apply(ast.literal_eval)
     df["Next_State"] = df["Next_State"].apply(ast.literal_eval)
-    
+
     # Change states to numerical state 
     for i in range(len(df["State"])):
         state_list, state_list_prime = df["State"][i], df["Next_State"][i]
 
         # State: convert to numerical state value 
         curDown, toGo, fp = int(state_list[0]), int(state_list[1]), int(state_list[2])
+        # handle edge case, where toGo is greater than 25, curDown is 5+, fp is 99+
+        toGo = min(25, toGo)
+        curDown = min(4, curDown)
+        fp = min(99, fp)
+        # update 
         df.loc[i, "State"] = 100 * (toGo - 1) + 2500 * (curDown - 1) + (fp - 1)
 
         # State prime: account for terminal case 
@@ -114,6 +118,11 @@ def main():
             df.loc[i, "Next_State"] = TERMINAL_STATE_VALUE
         else:
             curDown, toGo, fp = int(state_list_prime[0]), int(state_list_prime[1]), int(state_list_prime[2])
+            # handle edge case, where toGo is greater than 25, curDown is 5+, fp is 99+
+            toGo = min(25, toGo)
+            curDown = min(4, curDown)
+            fp = min(99, fp)
+            # update 
             df.loc[i, "Next_State"] = 100 * (toGo - 1) + 2500 * (curDown - 1) + (fp - 1)
 
     # zero index the data 
@@ -121,15 +130,21 @@ def main():
     df["Next_State"] -= 1
     df["Action"] -= 1
 
-    # conver to numpy for efficiency 
+    # convert to numpy for efficiency 
     data = df.to_numpy()
-    # print(data)
-    # initiate key vars
+
+    return data
+
+def main():
+
+    # Step 1: INITIALIZE 
     gamma, action_space, state_space, rate = GAMMA, ACTION_SPACE, STATE_SPACE, LEARNING_RATE
     # initialize Q table
     Q = np.zeros((state_space, action_space))
     # initialize table to track which (s,a) has been explored
     TrackingTable = np.zeros((state_space, action_space))
+    # store the optimal policy 
+    optimal_policy = None
     # initialize table for nearest neighbour 
     curdown_togo_fp = []
     for num_state in range(state_space):
@@ -140,14 +155,29 @@ def main():
     curdown_togo_fp_table = np.array(curdown_togo_fp)
     start = time.time()
 
-    for n in range(NUMBER_OF_PASSES):
-        QLearningInstance = QLearningMDP(action_space, state_space, gamma, Q, 
-                 TrackingTable, rate, data, curdown_togo_fp_table)
-        policy = QLearningInstance.QLearning()
-    end = time.time()
-    print(end - start, "seconds")
+    # Step 2: ITERATE DATA & UPDATE Q TABLE
+    # iterate through 2023 data
+    for dir in ["cleaned_2023_data/23_24_", "cleaned_2022_data/22_23_"]:
+        for week_num in range(1, 22): 
+            # inputfilepath = "data_cleaned/cleaned_2023_data/23_24_week_" + str(week_num) + ".csv"
+            inputfilepath = 'data_cleaned/' + dir + 'week_' + str(week_num) + ".csv"
+            outputfilename = "/Users/elychen/CS238/cs238_Final_Project/results/trained_w_2023.csv"
 
-    write_policy_file(outputfilename, policy)
+            data = process_data(inputfilepath)
+
+            if data is None: continue
+            
+            # Step 3: train & obtain optimal policy 
+            for n in range(NUMBER_OF_PASSES):
+                QLearningInstance = QLearningMDP(action_space, state_space, gamma, Q, 
+                        TrackingTable, rate, data, curdown_togo_fp_table)
+                optimal_policy = QLearningInstance.QLearning()
+            end = time.time()
+            print(end - start, "seconds")
+            print(inputfilepath)
+
+    # Write Policy File 
+    write_policy_file(outputfilename, optimal_policy)
 
 if __name__ == '__main__':
     main()
